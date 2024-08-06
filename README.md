@@ -1,0 +1,4 @@
+# NvimProfile
+
+From LazyVim.
+
