@@ -1,6 +1,11 @@
 return {
-  -- add gruvbox
-  { "ellisonleao/gruvbox.nvim" },
+  -- add theme
+  {
+    "ellisonleao/gruvbox.nvim",
+    priority = 1000,
+    config = true,
+    opts = {},
+  },
 
   -- Configure LazyVim to load gruvbox
   {
