@@ -1,7 +1,11 @@
 return {
   -- add theme
   {
-    "ellisonleao/gruvbox.nvim",
+    -- "navarasu/onedark.nvim",
+    -- "Mofiqul/vscode.nvim",
+    -- 'ellisonleao/gruvbox.nvim',
+    "folke/tokyonight.nvim",
+    -- "olimorris/onedarkpro.nvim",
     priority = 1000,
     config = true,
     opts = {},
@@ -11,7 +15,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "tokyonight",
     },
   },
 }
