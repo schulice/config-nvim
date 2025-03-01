@@ -25,3 +25,7 @@ vim.g.clipboard = {
     ["*"] = paste,
   },
 }
+
+vim.opt.breakat:append("。")
+vim.opt.breakat:append("，")
+
