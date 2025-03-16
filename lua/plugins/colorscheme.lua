@@ -9,8 +9,7 @@ return {
     -- "folke/tokyonight.nvim",
     priority = 1000,
     config = true,
-    opts = {
-    },
+    opts = {},
   },
 
   -- Configure LazyVim to load gruvbox

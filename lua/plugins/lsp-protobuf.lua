@@ -1,3 +1,8 @@
+-- Check the lsp executable exists
+if vim.fn.executable("protobuf-language-server") == 0 then
+  return {}
+end
+
 return {
   {
     "neovim/nvim-lspconfig",
@@ -15,7 +20,7 @@ return {
 
           configs.protobuf_language_server = {
             default_config = {
-              cmd = { 'protobuf-language-server' },
+              cmd = { "protobuf-language-server" },
               filetypes = { "proto", "cpp" },
               root_dir = util.root_pattern(".git"),
               single_file_support = true,
