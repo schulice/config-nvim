@@ -4,6 +4,7 @@
 
 -- Do not autoformat
 vim.g.autoformat = false
+vim.g.snacks_animate = false
 
 vim.o.clipboard = "unnamedplus"
 
@@ -26,6 +27,7 @@ vim.g.clipboard = {
   },
 }
 
+--- use for chinese
 vim.opt.breakat:append("。")
 vim.opt.breakat:append("，")
 
