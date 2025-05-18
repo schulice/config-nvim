@@ -14,7 +14,6 @@ return {
       },
       setup = {
         protobuf_language_server = function(_, opts)
-          local lspconfig = require("lspconfig")
           local configs = require("lspconfig.configs")
           local util = require("lspconfig.util")
 
@@ -28,7 +27,10 @@ return {
             },
           }
 
-          lspconfig.protobuf_language_server.setup(opts)
+          -- local lspconfig = require("lspconfig")
+          -- lspconfig.protobuf_language_server.setup(opts)
+          vim.lsp.config("protobuf_language_server", opts)
+          return true
         end,
       },
     },
